@@ -1,12 +1,15 @@
 import React, { FC } from "react";
 
+import {CajitaConEstilo} from './styles';
+
+
 interface HelloWorldProps{
   name:string
 }
 
 const HelloWorld:FC<HelloWorldProps> = ({name}) => {
   return <div>
-    <h1>Jellou, {name}</h1>
+    <CajitaConEstilo>Jellou, {name}</CajitaConEstilo>
   </div>
 }
 
